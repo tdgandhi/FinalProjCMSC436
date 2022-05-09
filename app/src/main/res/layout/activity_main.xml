@@ -10,9 +10,20 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="172dp"
         android:text="Start from 1\nand press consecutive numbers as\nfast as you can !!!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="396dp"
+        android:background="#F6F5F5"
+        android:text="Start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
