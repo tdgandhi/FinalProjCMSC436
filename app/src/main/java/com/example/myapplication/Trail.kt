@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import android.R
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -15,7 +14,7 @@ class Trail : AppCompatActivity() {
     var buttons = arrayOfNulls<Button>(8)
     var nums = BooleanArray(9)
     var chrono: Chronometer? = null
-    var linee_rosse: ArrayList<Int> = ArrayList()
+    var line_red: ArrayList<Int> = ArrayList()
     var button1: Button? = null
     var button2: Button? = null
     var button3: Button? = null
@@ -31,11 +30,6 @@ class Trail : AppCompatActivity() {
     var stopXRed = 0
     var stopY = 0
     var stopYRed = 0
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_trail2)
-    }
 
     private fun __init__() {
         relative_layout = findViewById<View>(R.id.relative_layout) as RelativeLayout
@@ -58,5 +52,8 @@ class Trail : AppCompatActivity() {
         }
     }
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_trail2)
+    }
 }
