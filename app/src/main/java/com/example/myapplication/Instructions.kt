@@ -21,6 +21,7 @@ class Instructions : AppCompatActivity() {
 
         mButton.setOnClickListener {
             val mIntent = Intent(this, Trail::class.java)
+            startActivity(mIntent)
         }
     }
 

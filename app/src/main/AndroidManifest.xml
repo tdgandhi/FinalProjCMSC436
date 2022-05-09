@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Trail"
+            android:exported="false" />
+        <activity
             android:name=".Instructions"
             android:exported="true">
             <intent-filter>
